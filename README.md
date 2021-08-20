@@ -12,7 +12,7 @@ This document explains how to use nbdev_testing
 
 Use the following models to get tdidf vector based on given documents and query
 
-```python
+```
 document_frequency, vocabulary = get_freq(["Hello world", "NLP is fun", "We work at the bank"])
 vocabulary
 ```
@@ -24,7 +24,7 @@ vocabulary
 
 
 
-```python
+```
 matrix = form_matrix(document_frequency, vocabulary)
 matrix
 ```
@@ -41,7 +41,7 @@ matrix
 
 
 
-```python
+```
 preprocessed_query = preprocess("They like finance")
 vector = get_query_vec(preprocessed_query, vocabulary, document_frequency)
 sorted_index = get_cos_sim(matrix, vector)
