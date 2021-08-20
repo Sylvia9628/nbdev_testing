@@ -14,9 +14,6 @@ Use the following models to get tdidf vector based on given documents and query
 
 ```python
 document_frequency, vocabulary = get_freq(["Hello world", "NLP is fun", "We work at the bank"])
-```
-
-```python
 vocabulary
 ```
 

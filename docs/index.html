@@ -70,26 +70,26 @@ nb_path: "index.ipynb"
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">document_frequency</span><span class="p">,</span> <span class="n">vocabulary</span> <span class="o">=</span> <span class="n">get_freq</span><span class="p">([</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="s2">&quot;NLP is fun&quot;</span><span class="p">,</span> <span class="s2">&quot;We work at the bank&quot;</span><span class="p">])</span>
+<span class="n">vocabulary</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;hello&#39;, &#39;NLP&#39;, &#39;world&#39;, &#39;-PRON-&#39;, &#39;fun&#39;, &#39;work&#39;, &#39;bank&#39;]</pre>
 </div>
-    {% endraw %}
 
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+</div>
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vocabulary</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
@@ -111,6 +111,27 @@ nb_path: "index.ipynb"
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[array([0.20273255, 0.        , 0.20273255, 0.        , 0.        ,
+        0.        , 0.        ]),
+ array([0.        , 0.20273255, 0.        , 0.        , 0.20273255,
+        0.        , 0.        ]),
+ array([0.        , 0.        , 0.        , 0.13515504, 0.        ,
+        0.13515504, 0.13515504])]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -122,44 +143,28 @@ nb_path: "index.ipynb"
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">preprocessed_query</span> <span class="o">=</span> <span class="n">preprocess</span><span class="p">(</span><span class="s2">&quot;They like finance&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vector</span> <span class="o">=</span> <span class="n">get_query_vec</span><span class="p">(</span><span class="n">preprocessed_query</span><span class="p">,</span> <span class="n">vocabulary</span><span class="p">,</span> <span class="n">document_frequency</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sorted_index</span> <span class="o">=</span> <span class="n">get_cos_sim</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">vector</span><span class="p">)</span>
+<span class="n">vector</span> <span class="o">=</span> <span class="n">get_query_vec</span><span class="p">(</span><span class="n">preprocessed_query</span><span class="p">,</span> <span class="n">vocabulary</span><span class="p">,</span> <span class="n">document_frequency</span><span class="p">)</span>
+<span class="n">sorted_index</span> <span class="o">=</span> <span class="n">get_cos_sim</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">vector</span><span class="p">)</span>
 <span class="n">sorted_index</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([2, 1, 0], dtype=int64)</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
