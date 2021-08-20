@@ -6,9 +6,7 @@ index = {"preprocess": "00_core.ipynb",
          "get_freq": "00_core.ipynb",
          "form_matrix": "00_core.ipynb",
          "get_query_vec": "00_core.ipynb",
-         "get_cos_sim": "00_core.ipynb",
-         "text": "00_core.ipynb",
-         "documents": "00_core.ipynb"}
+         "get_cos_sim": "00_core.ipynb"}
 
 modules = ["core.py"]
 
