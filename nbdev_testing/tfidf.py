@@ -79,6 +79,8 @@ def get_query_vec(preprocessed_query, vocab, doc_freq):
 
     return vector
 
+show_doc(form_matrix)
+
 # Cell
 def get_cos_sim(matrix, vector):
 
