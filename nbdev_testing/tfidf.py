@@ -79,7 +79,7 @@ def get_query_vec(preprocessed_query, vocab, doc_freq):
 
     return vector
 
-show_doc(form_matrix)
+show_doc(get_query_vec)
 
 # Cell
 def get_cos_sim(matrix, vector):
@@ -94,3 +94,5 @@ def get_cos_sim(matrix, vector):
     array = np.array(cos_sim)
     sort_index = np.argsort(array)[::-1][:10]
     return sort_index
+
+show_doc(get_cos_sim)

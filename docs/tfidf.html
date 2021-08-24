@@ -57,9 +57,21 @@ nb_path: "01_tfidf.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="form_matrix" class="doc_header"><code>form_matrix</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L30" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>form_matrix</code>(<strong><code>doc_freq</code></strong>, <strong><code>vocabulary</code></strong>)</p>
+<h4 id="get_query_vec" class="doc_header"><code>get_query_vec</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L58" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_query_vec</code>(<strong><code>preprocessed_query</code></strong>, <strong><code>vocab</code></strong>, <strong><code>doc_freq</code></strong>)</p>
 </blockquote>
-<p>Returns matrix with td-idf vectors.</p>
+<p>Retun tf-idf vector of input query</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="get_cos_sim" class="doc_header"><code>get_cos_sim</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L85" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_cos_sim</code>(<strong><code>matrix</code></strong>, <strong><code>vector</code></strong>)</p>
+</blockquote>
+<p>Returns 10 most similar documents based on cosine similarity between documents and query vector</p>
 
 </div>
 
