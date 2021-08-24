@@ -26,12 +26,35 @@ nb_path: "01_tfidf.ipynb"
     
 <div class="cell border-box-sizing code_cell rendered">
 
-</div>
-    {% endraw %}
+<div class="output_wrapper">
+<div class="output">
 
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="get_freq" class="doc_header"><code>get_freq</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_freq</code>(<strong><code>preprocessed_documents</code></strong>)</p>
+</blockquote>
+<p>Returns list with vocabulary frequencies per document and a vocabalury list</p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="form_matrix" class="doc_header"><code>form_matrix</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L30" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>form_matrix</code>(<strong><code>doc_freq</code></strong>, <strong><code>vocabulary</code></strong>)</p>
+</blockquote>
+<p>Returns matrix with td-idf vectors.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
 
 </div>
     {% endraw %}
@@ -54,7 +77,7 @@ nb_path: "01_tfidf.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_freq" class="doc_header"><code>get_freq</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L12" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_freq</code>(<strong><code>preprocessed_documents</code></strong>)</p>
+<h4 id="get_freq" class="doc_header"><code>get_freq</code><a href="__main__.py#L2" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_freq</code>(<strong><code>preprocessed_documents</code></strong>)</p>
 </blockquote>
 <p>Returns list with vocabulary frequencies per document and a vocabalury list</p>
 
@@ -79,9 +102,9 @@ nb_path: "01_tfidf.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="form_matrix" class="doc_header"><code>form_matrix</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L27" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>form_matrix</code>(<strong><code>doc_freq</code></strong>, <strong><code>vocabulary</code></strong>)</p>
+<h4 id="form_matrix" class="doc_header"><code>form_matrix</code><a href="__main__.py#L2" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>form_matrix</code>(<strong><code>doc_freq</code></strong>, <strong><code>vocabulary</code></strong>)</p>
 </blockquote>
-<p>"Returns matrix with td-idf vectors.</p>
+<p>Returns matrix with td-idf vectors.</p>
 
 </div>
 
@@ -89,13 +112,6 @@ nb_path: "01_tfidf.ipynb"
 
 </div>
 </div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
 
 </div>
     {% endraw %}
@@ -111,7 +127,7 @@ nb_path: "01_tfidf.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_query_vec" class="doc_header"><code>get_query_vec</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L54" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_query_vec</code>(<strong><code>preprocessed_query</code></strong>, <strong><code>vocab</code></strong>, <strong><code>doc_freq</code></strong>)</p>
+<h4 id="get_query_vec" class="doc_header"><code>get_query_vec</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L58" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_query_vec</code>(<strong><code>preprocessed_query</code></strong>, <strong><code>vocab</code></strong>, <strong><code>doc_freq</code></strong>)</p>
 </blockquote>
 <p>Retun tf-idf vector of input query</p>
 
@@ -143,7 +159,7 @@ nb_path: "01_tfidf.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_cos_sim" class="doc_header"><code>get_cos_sim</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L79" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_cos_sim</code>(<strong><code>matrix</code></strong>, <strong><code>vector</code></strong>)</p>
+<h4 id="get_cos_sim" class="doc_header"><code>get_cos_sim</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L83" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_cos_sim</code>(<strong><code>matrix</code></strong>, <strong><code>vector</code></strong>)</p>
 </blockquote>
 <p>Returns 10 most similar documents based on cosine similarity between documents and query vector</p>
 
@@ -160,6 +176,39 @@ nb_path: "01_tfidf.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.export</span> <span class="kn">import</span> <span class="n">notebook2script</span><span class="p">;</span> <span class="n">notebook2script</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Converted 00_preprocess.ipynb.
+Converted 01_tfidf.ipynb.
+Converted index.ipynb.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
 
 </div>
     {% endraw %}

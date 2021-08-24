@@ -8,6 +8,7 @@ import nltk
 import re
 from fastcore.test import test_eq
 from nltk.corpus import stopwords
+from nbdev.showdoc import *
 
 # Cell
 class Preprocess:
@@ -32,3 +33,7 @@ class Preprocess:
             preprocessed_documents.append(preprocessed_text)
 
         return preprocessed_documents
+
+
+
+show_doc(Preprocess.lemmatize)

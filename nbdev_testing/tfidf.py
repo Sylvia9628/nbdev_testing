@@ -7,6 +7,7 @@ from collections import Counter
 import numpy as np
 import math
 from fastcore.test import test_eq
+from nbdev.showdoc import *
 
 # Cell
 def get_freq(preprocessed_documents):
@@ -23,11 +24,12 @@ def get_freq(preprocessed_documents):
     vocab = list(set(vocab))
     return document_frequency, vocab
 
+show_doc(get_freq)
+
 # Cell
 def form_matrix(doc_freq, vocabulary):
 
-    """"Returns matrix with td-idf vectors.
-    """
+    "Returns matrix with td-idf vectors."
 
     M = []
 
@@ -49,6 +51,8 @@ def form_matrix(doc_freq, vocabulary):
 
         M.append(arr)
     return M
+
+show_doc(form_matrix)
 
 # Cell
 def get_query_vec(preprocessed_query, vocab, doc_freq):
