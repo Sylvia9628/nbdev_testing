@@ -3,12 +3,10 @@
 __all__ = ['get_freq', 'form_matrix', 'get_query_vec', 'get_cos_sim']
 
 # Cell
-from nbdev.showdoc import *
-
-# Cell
 from collections import Counter
 import numpy as np
 import math
+from fastcore.test import test_eq
 
 # Cell
 def get_freq(preprocessed_documents):
