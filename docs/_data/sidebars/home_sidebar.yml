@@ -11,7 +11,10 @@ entries:
       url: /
     - output: web,pdf
       title: Test nbdev
-      url: core.html
+      url: preprocess.html
+    - output: web,pdf
+      title: Title
+      url: tfidf.html
     output: web
     title: nbdev_testing
   output: web

@@ -2,13 +2,14 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"preprocess": "00_core.ipynb",
-         "get_freq": "00_core.ipynb",
-         "form_matrix": "00_core.ipynb",
-         "get_query_vec": "00_core.ipynb",
-         "get_cos_sim": "00_core.ipynb"}
+index = {"Preprocess": "00_preprocess.ipynb",
+         "get_freq": "01_tfidf.ipynb",
+         "form_matrix": "01_tfidf.ipynb",
+         "get_query_vec": "01_tfidf.ipynb",
+         "get_cos_sim": "01_tfidf.ipynb"}
 
-modules = ["core.py"]
+modules = ["preprocess.py",
+           "tfidf.py"]
 
 doc_url = "https://Sylvia9628.github.io/nbdev_testing/"
 

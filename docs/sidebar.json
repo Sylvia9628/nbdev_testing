@@ -1,6 +1,7 @@
 {
   "nbdev_testing": {
     "Overview": "/",
-    "Test nbdev": "core.html"
+    "Test nbdev": "preprocess.html",
+    "Title": "tfidf.html"
   }
 }
