@@ -2,9 +2,45 @@
 > This is a project to test out nbdev
 
 
-## Modules
 
-This document explains how to use nbdev_testing
+<h4 id="Preprocess.lemmatize" class="doc_header"><code>Preprocess.lemmatize</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/preprocess.py#L18" class="source_link" style="float:right">[source]</a></h4>
+
+> <code>Preprocess.lemmatize</code>()
+
+`Returns stemmed or lemmatized documents with punctuation and stopwords removed`
+
+
+
+<h4 id="get_freq" class="doc_header"><code>get_freq</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L13" class="source_link" style="float:right">[source]</a></h4>
+
+> <code>get_freq</code>(**`preprocessed_documents`**)
+
+Returns list with vocabulary frequencies per document and a vocabalury list
+
+
+
+<h4 id="form_matrix" class="doc_header"><code>form_matrix</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L30" class="source_link" style="float:right">[source]</a></h4>
+
+> <code>form_matrix</code>(**`doc_freq`**, **`vocabulary`**)
+
+Returns matrix with td-idf vectors.
+
+
+
+<h4 id="get_query_vec" class="doc_header"><code>get_query_vec</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L58" class="source_link" style="float:right">[source]</a></h4>
+
+> <code>get_query_vec</code>(**`preprocessed_query`**, **`vocab`**, **`doc_freq`**)
+
+Retun tf-idf vector of input query
+
+
+
+<h4 id="get_cos_sim" class="doc_header"><code>get_cos_sim</code><a href="https://github.com/Sylvia9628/nbdev_testing/tree/master/nbdev_testing/tfidf.py#L85" class="source_link" style="float:right">[source]</a></h4>
+
+> <code>get_cos_sim</code>(**`matrix`**, **`vector`**)
+
+Returns 10 most similar documents based on cosine similarity between documents and query vector
+
 
 ## Install
 
@@ -16,13 +52,13 @@ This document explains how to use nbdev_testing
 
 ### Lemmatize
 
-```
+```python
 documents =  ["Hello world", "NLP is fun", "We work at the bank"]
 text = Preprocess(documents)
 preprocessed = text.lemmatize()
 ```
 
-```
+```python
 preprocessed
 ```
 
@@ -37,11 +73,11 @@ preprocessed
 
 ### Vocabulary frequency
 
-```
+```python
 document_frequency, vocabulary = get_freq(preprocessed)
 ```
 
-```
+```python
 document_frequency
 ```
 
@@ -54,14 +90,14 @@ document_frequency
 
 
 
-```
+```python
 vocabulary
 ```
 
 
 
 
-    ['world', 'fun', 'hello', '-PRON-', 'NLP', 'bank', 'work']
+    ['NLP', 'world', 'fun', 'work', 'bank', 'hello', '-PRON-']
 
 
 
