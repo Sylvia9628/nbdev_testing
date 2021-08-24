@@ -52,13 +52,13 @@ Returns 10 most similar documents based on cosine similarity between documents a
 
 ### Lemmatize
 
-```python
+```
 documents =  ["Hello world", "NLP is fun", "We work at the bank"]
 text = Preprocess(documents)
 preprocessed = text.lemmatize()
 ```
 
-```python
+```
 preprocessed
 ```
 
@@ -73,11 +73,11 @@ preprocessed
 
 ### Vocabulary frequency
 
-```python
+```
 document_frequency, vocabulary = get_freq(preprocessed)
 ```
 
-```python
+```
 document_frequency
 ```
 
@@ -90,7 +90,7 @@ document_frequency
 
 
 
-```python
+```
 vocabulary
 ```
 
