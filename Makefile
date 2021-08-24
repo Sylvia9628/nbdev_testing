@@ -1,13 +1,12 @@
-
 .ONESHELL:
 SHELL := /bin/bash
 SRC = $(wildcard ./*.ipynb)
 
-all: nbdev_testing docs
+all: test_nbdev docs
 
-nbdev_testing: $(SRC)
+test_nbdev: $(SRC)
 	nbdev_build_lib
-	touch nbdev_testing
+	touch test_nbdev
 
 sync:
 	nbdev_update_lib
